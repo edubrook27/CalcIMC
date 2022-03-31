@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imc.css">
+    <link rel="shortcut icon" href="Imagem/favicon/99315eaa0a0af1bdd1179b613c8b6e229383.ico" type="image/x-icon">
+    <title>Estou Gordo?</title>
+
+    <script type="Text/javascript">
+
+        const calculaImc = () => {
+            const altura = document.imcform.elements["altura"].value;
+        
+            const peso = document.imcform.elements["peso"].value;
+        
+            const imc = peso / (altura * altura);
+        
+            if(imc < 18.5){
+                alert("Você está abaixo do peso");
+                }
+                else if (imc >= 18.5 && imc < 25){
+                    alert("Parabéns, está com o peso normal");
+                 }
+                 else if (imc >= 25 && imc < 30){
+                    alert("Cuidado, Você está engordando");
+                 }
+                 else if (imc >= 30 && imc < 40){
+                    alert("Você está obeso");
+                 }
+                 else if (imc >= 40){
+                    alert("Você está com obesidade grave");
+                 }
+        }
+        
+        </script>
+</head>
+<body>
+
+    <p>Use apenas números e "."</p>
+
+    <div class="barras">
+
+    <div id="form">
+        <form id="imcform" name="imcform" action="#">
+        <label for="altura"> Insira sua Altura</label>
+         <input type="text" id="altura" name="altura">
+    </div>
+    <br>
+    
+    <div id="form1">
+    <label for="peso"> Insira seu Peso</label>
+    <input type="text" id="peso" name="peso">
+    <br>
+    
+    
+    </div>
+    </form>
+    
+    <div id= "calcular">
+    <input type="submit" value="Calcular" onclick="calculaImc()">   
+    </div>
+    </form>
+</div>
+
+<img src="Imagem/cachorro.png">
+    
+</body>
+</html>

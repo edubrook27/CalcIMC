@@ -1,0 +1,68 @@
+body {
+    background-color: #3f0d12;
+background-image: linear-gradient(90deg, #3f0d12 0%, #a71d31 74%);
+
+}
+
+p {
+    color: white;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    top: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.barras {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+#altura {
+    width: 200px;
+    height: 20px;
+    padding: 3px;
+}
+#peso {
+    width: 200px;
+    height: 20px;
+    padding: 3px;
+}
+
+label {
+    display: grid;
+    top: -50px;  
+    margin-bottom: 10px;
+    font-size: 20px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+}
+
+#calcular {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+#form {
+    text-align: center;
+    width: auto;
+    padding-top: 120px;
+
+}
+#form1 {
+    text-align: center;
+    width: auto;
+    padding-bottom: 5px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 350px;
+    top: 50px;
+}
